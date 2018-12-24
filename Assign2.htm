@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<script>
+function getShoeItems()
+{
+var parent = document.getElementById("itemsDiv");
+  parent.innerHTML='';
+  var shoeItems=['puma trainers *3  ','Sketchers ProWalkers ','Reebok Classic 1990 ','Nike Air max Alite '];
+  var para=document.createElement("p");
+  shoeItems.forEach(function(item){
+  var itemButton=document.createElement("Button");
+  var itemButtonText=document.createTextNode(item);
+  itemButton.appendChild(itemButtonText);
+  para.appendChild(itemButton);
+});
+parent.appendChild(para);
+}
+function getkitchenItems()
+{
+   var parent = document.getElementById("itemsDiv");
+  parent.innerHTML='';
+  var shoeItems=['4 piece set bamboo mat  ','espresso coffee maker ','12 qT PRESSURE COOKER '];
+  var para=document.createElement("p");
+  shoeItems.forEach(function(item){
+  var itemButton=document.createElement("Button");
+  var itemButtonText=document.createTextNode(item);
+  itemButton.appendChild(itemButtonText);
+  para.appendChild(itemButton);
+});
+parent.appendChild(para);
+}
+function getHomeItems()
+{
+   var parent = document.getElementById("itemsDiv");
+   parent.innerHTML='';
+  var shoeItems=['4*6 Photo frame  ','Shower Curtain ','Accent table lamp ','100% cottotn towels '];
+  var para=document.createElement("p");
+  shoeItems.forEach(function(item){
+  var itemButton=document.createElement("Button");
+  var itemButtonText=document.createTextNode(item);
+  itemButton.appendChild(itemButtonText);
+  para.appendChild(itemButton);
+});
+parent.appendChild(para);
+}
+function getElectornicItems()
+{
+   var parent = document.getElementById("itemsDiv");
+   parent.innerHTML = '';
+  var shoeItems=['DSLR Camera  ','Apple Iphone ','Bose QC ','Sony Supe base'];
+  var para=document.createElement("p");
+  shoeItems.forEach(function(item){
+  var itemButton=document.createElement("Button");
+  var itemButtonText=document.createTextNode(item);
+  itemButton.appendChild(itemButtonText);
+  para.appendChild(itemButton);
+});
+parent.appendChild(para);
+}
+</script>
+
+<h2>Categories</h2>
+
+<button type="button"
+onclick="getkitchenItems()">
+Kitchen</button>
+<button type="button"
+onclick="getShoeItems()">Shoes</button>
+<button type="button"
+onclick="getHomeItems()">Home</button>
+<button type="button"
+onclick="getElectornicItems()">Electronics</button>
+
+<h2>Products</h2>
+<div id="itemsDiv" >
+</div>
+
+</body>
+</html>
